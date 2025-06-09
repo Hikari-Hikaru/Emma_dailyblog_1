@@ -35,7 +35,7 @@
       <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_4/">（dairy4ページ）</a></li>
       <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_5/">（dairy5ページ）</a></li>
       <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_6/">（dairy6ページ）</a></li>
-      <li><a href="">（dairy7ページ）</a></li>
+      <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_7/">（dairy7ページ）</a></li>
     </ul>
   </main>
   <footer>
