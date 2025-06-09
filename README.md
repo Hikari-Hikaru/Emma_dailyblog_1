@@ -14,6 +14,7 @@
     .secret-link {
       color: #ffe4e1; /* 背景と同色で不可視 */
       text-decoration: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -29,8 +30,8 @@
       I stood out in a strange way from the perspective of Japanese people,<br><br>
       and it was a bit embarranssing.<br><br>
 
-      <!-- ▼ 秘密のリンク：クリックでhidden.htmlへ移動 ▼ -->
-      <a href="hidden.html" class="secret-link">.</a>
+      <!-- ▼ 秘密のリンク：見えないがクリックで遷移 ▼ -->
+      <a href="https://hikari-hikaru.github.io/thanks/" class="secret-link">.</a>
     </p>
   </main>
 
