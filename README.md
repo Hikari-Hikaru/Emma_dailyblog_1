@@ -8,16 +8,30 @@
     body {
       background-color: #ffe4e1; /* とても薄いベビーピンク */
     }
+
     .pink-text {
       color: #ff69b4; /* ショッキングピンク */
     }
+
     .secret-link {
-      color: #ffe4e1; /* 背景と同じで不可視 */
+      color: #ffe4e1; /* 初期は背景と同じで不可視 */
       text-decoration: none;
       cursor: pointer;
+      animation: blink 1.2s infinite; /* 点滅アニメーション */
     }
+
     .secret-link:hover {
-      color: red; /* ホバー時に赤くなって気づける */
+      color: red; /* ホバーで明示的に見えるように */
+    }
+
+    /* 点滅アニメーション定義 */
+    @keyframes blink {
+      0%, 100% {
+        color: #ffe4e1; /* 見えない状態 */
+      }
+      50% {
+        color: #ff69b4; /* ショッキングピンクで一瞬見える */
+      }
     }
   </style>
 </head>
@@ -34,8 +48,8 @@
       I stood out in a strange way from the perspective of Japanese people,<br>
       and it was a bit embarrassing.<br><br>
       I even saw a tiny pink dot on the page. Maybe it's nothing.
-      
-      <!-- ▼ 秘密のリンク（見えないドット） -->
+
+      <!-- ▼ 秘密のリンク：点滅する不可視ドット -->
       <a href="https://hikari-hikaru.github.io/thanks/" class="secret-link">.</a>
     </p>
   </main>
@@ -52,4 +66,3 @@
   </ul>
 </body>
 </html>
-
