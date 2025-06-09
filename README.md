@@ -26,6 +26,18 @@
      and it was a bit embarranssing.<br><br>
     </p>
   </main>
+  </p>
+    <!-- ▼ 日付別リンク ▼ -->
+    <h2>ブログ一覧</h2>
+    <ul>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+      <li><a href="https://https://hikari-hikaru.github.io/Emma_dailyblog_2//">Emma's_dairyblog（dairy2ページ）</a></li>
+    </ul>
+  </main>
   <footer>
     <small>&copy; 1994 HIKARI HIKARU All rights reserved.</small>
   </footer>
