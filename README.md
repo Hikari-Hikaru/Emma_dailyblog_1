@@ -2,48 +2,48 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>2025年7月5日 - Dailyblog_1</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>hidden</title>
   <style>
     body {
-      background-color: #ffe4e1; /* とても薄いベビーピンク */
+      background-color: #000;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2em;
+      transition: opacity 2s ease-out;
     }
-    .pink-text {
-      color: #ff69b4; /* ショッキングピンク */
+    .faint {
+      color: #999;
+      font-size: 0.9em;
     }
-    .secret-link {
-      color: #ffe4e1; /* 背景と同色で不可視 */
-      text-decoration: none;
+    .secret {
+      color: #111; /* 暗号っぽい色で目立たない */
     }
   </style>
+  <script>
+    setTimeout(() => {
+      document.body.style.opacity = 0; // フェードアウト
+    }, 14000);
+
+    setTimeout(() => {
+      window.close(); // 一部ブラウザでは効果なし
+    }, 15000);
+  </script>
 </head>
-<body>
-  <header>
-    <h1>Emma's dailyblog_1</h1>
-  </header>
-  <main>
-    <h2>2025_04_05</h2>
-    <p>
-      Today was the entrance ceremony for high school <br>
-      I was born in Japan,but since my parents grew up in U.S.A.<br><br>
-      I stood out in a strange way from the perspective of Japanese people,<br><br>
-      and it was a bit embarranssing.<br><br>
 
-      <!-- ▼ 秘密のリンク：クリックでhidden.htmlへ移動 ▼ -->
-      <a href="hidden.html" class="secret-link">.</a>
-    </p>
-  </main>
+<body onload="console.log('hidden.html loaded')">
+  <h2>……ここまで読んでくれてありがとう。</h2>
+  <p>
+    　でも、もう遅いよね。<br>
+    　あのとき、わたしは気づいてた。<br>
+    　誰が、わたしを……。
+  </p>
 
-  <!-- ▼ 日付別リンク ▼ -->
-  <h2>ブログ一覧</h2>
-  <ul>
-    <li><a href="https://hikari-hikaru.github.io/Emma_dailyblog_2/">（dairy2ページ）</a></li>
-    <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_3/">（dairy3ページ）</a></li>
-    <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_4/">（dairy4ページ）</a></li>
-    <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_5/">（dairy5ページ）</a></li>
-    <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_6/">（dairy6ページ）</a></li>
-    <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_7/">（dairy7ページ）</a></li>
-  </ul>
+  <p>
+    　お願い。もしこれを見つけてくれたなら、<br>
+    　わたしがなぜ、こんな最後を迎えたのかを知ってほしい。<br>
+    　そして、<span class="secret">カナエ</span>を……止めて。
+  </p>
+
+  <p class="faint">（このページはすぐに閉じるかもしれない）</p>
 </body>
 </html>
-
