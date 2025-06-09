@@ -12,12 +12,12 @@
       color: #ff69b4; /* ショッキングピンク */
     }
     .secret-link {
-      color: #ffe4e1; /* 背景と同色で不可視 */
+      color: #ffe4e1; /* 背景と同じで不可視 */
       text-decoration: none;
       cursor: pointer;
     }
     .secret-link:hover {
-      color: red; /* ヒント用：ホバー時に赤くなる */
+      color: red; /* ホバー時に赤くなって気づける */
     }
   </style>
 </head>
@@ -35,7 +35,7 @@
       and it was a bit embarrassing.<br><br>
       I even saw a tiny pink dot on the page. Maybe it's nothing.
       
-      <!-- ▼ 秘密のリンク：見えないがクリックで遷移 ▼ -->
+      <!-- ▼ 秘密のリンク（見えないドット） -->
       <a href="https://hikari-hikaru.github.io/thanks/" class="secret-link">.</a>
     </p>
   </main>
@@ -52,3 +52,4 @@
   </ul>
 </body>
 </html>
+
