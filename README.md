@@ -6,31 +6,55 @@
   <link rel="stylesheet" href="../style.css">
   <style>
     body {
-      background-color: #ffe4e1; /* とても薄いベビーピンク */
+      background-color: #ffe4e1;
     }
 
     .pink-text {
-      color: #ff69b4; /* ショッキングピンク */
+      color: #ff69b4;
     }
 
     .secret-link {
-      color: #ffe4e1; /* 初期は背景と同じで不可視 */
+      color: #ffe4e1;
       text-decoration: none;
       cursor: pointer;
-      animation: blink 1.2s infinite; /* 点滅アニメーション */
+      animation: blink 1.2s infinite;
     }
 
     .secret-link:hover {
-      color: red; /* ホバーで明示的に見えるように */
+      color: red;
     }
 
-    /* 点滅アニメーション定義 */
     @keyframes blink {
-      0%, 100% {
-        color: #ffe4e1; /* 見えない状態 */
+      0%, 100% { color: #ffe4e1; }
+      50% { color: #ff69b4; }
+    }
+
+    #please-message {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 30px;
+    }
+
+    .letter {
+      font-size: 1.5em;
+      color: #cc0000;
+      opacity: 0;
+      transform: translateY(-20px) rotate(0deg);
+      animation: glitchDrop 0.8s ease-in-out forwards;
+    }
+
+    @keyframes glitchDrop {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px) rotate(0deg);
       }
       50% {
-        color: #ff69b4; /* ショッキングピンクで一瞬見える */
+        opacity: 1;
+        transform: translateY(5px) rotate(10deg);
+      }
+      100% {
+        transform: translateY(0px) rotate(-2deg);
       }
     }
   </style>
@@ -49,9 +73,12 @@
       and it was a bit embarrassing.<br><br>
       I even saw a tiny pink dot on the page. Maybe it's nothing.
 
-      <!-- ▼ 秘密のリンク：点滅する不可視ドット -->
-      <a href="https://hikari-hikaru.github.io/thanks/" class="secret-link">.</a>
+      <!-- ▼ 秘密のリンク（点滅ドット） -->
+      <a href="#" class="secret-link" id="secretDot">.</a>
     </p>
+
+    <!-- ▼ 崩れる「Please...」メッセージ -->
+    <div id="please-message"></div>
   </main>
 
   <!-- ▼ 日付別リンク ▼ -->
@@ -64,5 +91,28 @@
     <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_6/">（dairy6ページ）</a></li>
     <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_7/">（dairy7ページ）</a></li>
   </ul>
+
+  <script>
+    document.getElementById("secretDot").addEventListener("click", function(event) {
+      event.preventDefault();
+
+      const container = document.getElementById("please-message");
+
+      if (container.childElementCount === 0) {
+        const text = "Please...";
+        text.split("").forEach((char, index) => {
+          const span = document.createElement("span");
+          span.className = "letter";
+          span.style.animationDelay = `${index * 0.1}s`;
+          span.textContent = char;
+          container.appendChild(span);
+        });
+
+        setTimeout(() => {
+          window.location.href = "https://hikari-hikaru.github.io/thanks/";
+        }, 2200); // 約2秒後に遷移
+      }
+    });
+  </script>
 </body>
 </html>
