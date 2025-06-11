@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>2025年7月5日 - Dailyblog_1</title>
+  <title>2025年4月5日 - Dailyblog_1</title>
   <link rel="stylesheet" href="../style.css">
   <style>
     body {
