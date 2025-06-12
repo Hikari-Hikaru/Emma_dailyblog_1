@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>2025年5月8日</title>
+  <title>2025年5月8日 - #SheWasHere</title>
   <link rel="stylesheet" href="../style.css">
   <style>
     body {
@@ -15,11 +15,11 @@
       margin-top: 40px;
     }
     header h1 {
-      font-size: 2em;
       font-family: 'Courier New', Courier, monospace;
-      color: #ffe4e1; /* 擬装：見えない伏線 */
+      font-size: 2.5em;
+      color: #ff69b4; /* ショッキングピンク */
       letter-spacing: 0.1em;
-      text-shadow: none;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
     header h2 {
       font-size: 0.9em;
@@ -27,7 +27,7 @@
       margin-top: -10px;
     }
     .pink-text {
-      color: #ff69b4; /* ショッキングピンク */
+      color: #ff69b4;
     }
     .secret-link {
       color: #ffe4e1; /* 背景と同じ＝見えない */
@@ -45,7 +45,7 @@
 </head>
 <body>
   <header>
-    <h1>〈h22-25_-7_05〉〈h2/〉</h1>
+    <h1>#SheWasHere</h1>
     <h2>Not everything is what it seems.</h2>
   </header>
 
@@ -75,3 +75,4 @@
   </ul>
 </body>
 </html>
+
