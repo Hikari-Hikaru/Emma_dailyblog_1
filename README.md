@@ -78,12 +78,11 @@
 </head>
 <body>
   <header>
-    <h1>#SheWasHere</h1>
+    <h1>2025_04_05</h1>
     <h2>Not everything is what it seems.</h2>
   </header>
 
   <main>
-    <h2>2025_04_05</h2>
     <p>
       Today was the entrance ceremony for high school.<br>
       I was born in Japan, but since my parents grew up in U.S.A.,<br><br>
