@@ -91,7 +91,7 @@
       I even saw a tiny pink dot on the page. Maybe it's nothing.
 
       <!-- ▼ 秘密のリンク（点滅ドット） -->
-      <a href="#" class="secret-link" id="secretDot">.</a>
+      <a href="javascript:void(0)" class="secret-link" id="secretDot">.</a>
     </p>
 
     <!-- ▼ 崩れる「Please...」メッセージ -->
@@ -109,12 +109,13 @@
     <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_7/">（dairy7ページ）</a></li>
     <li><a href="https://hikari-hikaru.github.io/Emma-s_dailyblog_8/">（dairy8ページ）</a></li>
   </ul>
+
   <script>
-    document.getElementById("secretDot").addEventListener("click", function(event) {
+    const secretDot = document.getElementById("secretDot");
+    const container = document.getElementById("please-message");
+
+    function handleClick(event) {
       event.preventDefault();
-
-      const container = document.getElementById("please-message");
-
       if (container.childElementCount === 0) {
         const text = "Please...";
         text.split("").forEach((char, index) => {
@@ -127,9 +128,12 @@
 
         setTimeout(() => {
           window.location.href = "https://hikari-hikaru.github.io/thanks/";
-        }, 2200); // 約2秒後に遷移
+        }, 2200);
       }
-    });
+    }
+
+    secretDot.addEventListener("click", handleClick);
+    secretDot.addEventListener("touchstart", handleClick);
   </script>
 </body>
 </html>
